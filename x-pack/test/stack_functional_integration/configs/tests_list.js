@@ -55,6 +55,7 @@ export default (envObj) => {
       xs.push('monitoring');
     }
     if (envObj.VM === 'centos7_rpm') {
+      xs.push('alerts');
       // monitoring is last because we switch to the elastic superuser here
       xs.push('monitoring/_monitoring_metricbeat');
     }
